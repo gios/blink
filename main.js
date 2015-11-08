@@ -1,2 +1,1 @@
-import Hello from './Hello.js';
-console.log(Hello);
+import './Hello.js';
