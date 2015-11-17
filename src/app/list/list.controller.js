@@ -12,5 +12,12 @@
     vm.creationDate = 1447750104991;
     vm.args = 1 + 2;
     vm.players = footballerArhive.getFootballers();
+    vm.selectFootballer = function(e, footballer) {
+      angular.forEach(vm.players, function(value) {
+        value.selected = false;
+      });
+
+      footballer.selected = true;
+    };
   }
 })();
