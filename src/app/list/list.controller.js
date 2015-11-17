@@ -9,6 +9,6 @@
   function ListController() {
     var vm = this;
 
-    vm.agrs = 1 + 2;
+    vm.args = 1 + 2;
   }
 })();
