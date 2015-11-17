@@ -7,6 +7,26 @@
   <div>
     <h2>List</h2>
     {{list.args}}
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Player</th>
+          <th>Stats</th>
+          <th>Position</th>
+          <th>Nationality</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="player in list.players | orderBy: '-stats'">
+          <th scope="row">{{player.number}}</th>
+          <td>{{player.name}}</td>
+          <td>{{player.stats}}</td>
+          <td>{{player.position}}</td>
+          <td>{{player.nationality}}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
 </div>
