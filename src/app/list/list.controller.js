@@ -18,6 +18,7 @@
       });
 
       footballer.selected = true;
+      $log.log(e, footballer);
     };
   }
 })();
