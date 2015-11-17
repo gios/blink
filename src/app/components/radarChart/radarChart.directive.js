@@ -12,7 +12,7 @@
       scope: {
         values: '='
       },
-      template: '&nbsp;',
+      template: '<div id="radar-chart"></div>',
       link: linkFunc,
       controller: RadarChart,
       controllerAs: 'vm'
@@ -20,14 +20,12 @@
 
     return directive;
 
-    function linkFunc(scope, el, attr, vm, $log) {
-      $log.log(vm);
+    function linkFunc(scope, el, attr) {
+      console.log(scope.values, el, attr);
     }
 
     /** @ngInject */
-    function RadarChart($log) {
-      var vm = this;
-      $log.log(vm);
+    function RadarChart() {
     }
   }
 
