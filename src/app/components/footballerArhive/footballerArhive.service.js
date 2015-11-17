@@ -3,10 +3,10 @@
 
   angular
     .module('blink')
-    .service('fotballerArhive', fotballerArhive);
+    .service('footballerArhive', footballerArhive);
 
   /** @ngInject */
-  function fotballerArhive() {
+  function footballerArhive() {
     var players = [
       {
         number: 1,
@@ -52,9 +52,9 @@
       }
     ];
 
-    this.getFotballers = getFotballers;
+    this.getFootballers = getFootballers;
 
-    function getFotballers() {
+    function getFootballers() {
       return players;
     }
   }
