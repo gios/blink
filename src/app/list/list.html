@@ -6,7 +6,6 @@
 
   <div>
     <h2>List</h2>
-    {{list.args}}
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -27,7 +26,7 @@
         </tr>
       </tbody>
     </table>
-    <radar-chart values="[1, 2, 3]"></radar-chart>
+    <nvd3 options="list.options" data="list.extendedStats" api="list.api"></nvd3>
   </div>
 
 </div>

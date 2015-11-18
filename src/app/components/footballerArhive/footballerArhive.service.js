@@ -14,7 +14,8 @@
         stats: 81,
         position: 'GK',
         nationality: 'Bosnia and Herzegovina',
-        selected: false
+        selected: false,
+        extendedStats: getextendedStats()
       },
       {
         number: 5,
@@ -22,7 +23,8 @@
         stats: 84,
         position: 'CB',
         nationality: 'France',
-        selected: false
+        selected: false,
+        extendedStats: getextendedStats()
       },
       {
         number: 26,
@@ -30,7 +32,8 @@
         stats: 87,
         position: 'CB',
         nationality: 'England',
-        selected: false
+        selected: false,
+        extendedStats: getextendedStats()
       },
       {
         number: 8,
@@ -38,7 +41,8 @@
         stats: 86,
         position: 'AMD',
         nationality: 'Brazil',
-        selected: false
+        selected: false,
+        extendedStats: getextendedStats()
       },
       {
         number: 10,
@@ -46,7 +50,8 @@
         stats: 92,
         position: 'LMD',
         nationality: 'Belgium',
-        selected: false
+        selected: false,
+        extendedStats: getextendedStats()
       },
       {
         number: 19,
@@ -54,7 +59,8 @@
         stats: 84,
         position: 'CF',
         nationality: 'Spain',
-        selected: false
+        selected: false,
+        extendedStats: getextendedStats()
       }
     ];
 
@@ -62,6 +68,22 @@
 
     function getFootballers() {
       return players;
+    }
+
+    function getRandomStats() {
+      return Math.round(Math.random() * 10);
+    }
+
+    function getextendedStats() {
+      return [
+        { key: "Physical", y: getRandomStats() },
+        { key: "Shooting", y: getRandomStats() },
+        { key: "Passing", y: getRandomStats() },
+        { key: "Curve", y: getRandomStats() },
+        { key: "Free Kick", y: getRandomStats() },
+        { key: "Penalty", y: getRandomStats() },
+        { key: "Sprint", y: getRandomStats() }
+      ];
     }
   }
 
