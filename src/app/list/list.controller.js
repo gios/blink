@@ -13,6 +13,9 @@
     vm.players = footballerArhive.getFootballers();
 
     vm.selectFootballer = function(e, footballer) {
+      if (angular.element(e.target).closest("tr").hasClass("info")) {
+        return;
+      }
       angular.forEach(vm.players, function(value) {
         value.selected = false;
       });

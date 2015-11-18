@@ -71,7 +71,7 @@
     }
 
     function getRandomStats() {
-      return Math.round(Math.random() * 10);
+      return Math.random() * 10;
     }
 
     function getextendedStats() {
